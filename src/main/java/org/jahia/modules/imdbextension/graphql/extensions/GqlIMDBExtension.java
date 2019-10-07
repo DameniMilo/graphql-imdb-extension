@@ -18,7 +18,7 @@ public class GqlIMDBExtension {
     }
 
     @GraphQLField
-    @GraphQLDescription("Retrieve the list of actors of a movie")
+    @GraphQLDescription("Retrieve the IMDB rating of a movie")
     public Double getIMDBRating() {
         return imdbService.getMovieRating(gqlMovie.getTmdbMovie().imdb_id);
     }
